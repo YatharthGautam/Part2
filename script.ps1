@@ -21,6 +21,21 @@ python ReadData.py
 
 
 
+#script for downloading the csv file from blob storage to VM
+
+az login --use-device-code
+az vm start --resource-group Data_Engineer --name VM-yatharth
+ssh yatharth-DE@52.232.126.32
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+az storage blob download \
+--account-name dataengineerv1 \
+--container-name raw \
+--name tourism_dataset.csv \
+--file ~/result-Yatharth.csv \
+--account-key "ieLmjePYNxBcajmfHvX8TsMXa3bn8nkH3MCuaWTsA/E+G56z3KRYSPO1M5MaHNds5FhE37PsZwYm+AStsnl/lg=="
+ls ~
+
+
 
 
 #storing the codes into github repo with git bash
