@@ -25,7 +25,7 @@ python ReadData.py
 
 az login --use-device-code
 az vm start --resource-group Data_Engineer --name VM-yatharth
-ssh yatharth-DE@52.232.126.32
+ssh yatharth-DE@IP Address
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 az storage blob download \
 --account-name dataengineerv1 \
