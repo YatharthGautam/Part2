@@ -32,7 +32,7 @@ az storage blob download \
 --container-name raw \
 --name tourism_dataset.csv \
 --file ~/result-Yatharth.csv \
---account-key "ieLmjePYNxBcajmfHvX8TsMXa3bn8nkH3MCuaWTsA/E+G56z3KRYSPO1M5MaHNds5FhE37PsZwYm+AStsnl/lg=="
+--account-key "ieLmjePYNxBcajmfHvX8TsMXa3bn8nkH3MCuaWTsA/E+G56z3KRYSPO1M5M...."
 ls ~
 
 
